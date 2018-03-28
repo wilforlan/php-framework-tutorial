@@ -1,0 +1,15 @@
+{% extends "layouts/layouts.html" %}
+{% block head %}
+{{ parent() }}
+{% endblock %}
+{% block content %}
+    <h2> Posts </h2>
+    {% for post in posts %}
+        {{post}}
+    {% endfor %}
+
+    <h2> Comments </h2>
+    {% for comment in comments %}
+        {{comment}}
+    {% endfor %}
+{% endblock %}
